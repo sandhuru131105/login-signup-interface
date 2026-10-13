@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+    <section class="bg-color">
+        <div class="bg-colors">
+            <div class="row">
+                <div class="col-6 carousel-items">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/stitch.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/peaceful.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/waterfall.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-end align-items-end">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 color-items ">
+                    <div>
+                        <img class="logo-item" src="/assets/NOTIPISO Logo.png" alt="">
+                    </div>
+                    <div class="header-item">
+                        <h2 class="heading-item" id="name-label">Create an account</h2>
+                        <div class="d-flex flex-row ">
+                            <p class="para-item" id="name-labels">Already have an account? </p>
+                            <p class="login-item" id="name-labeless">Log In</p>
+                        </div>
+                    </div>
+                    <div class="input-deat">
+                        <div class="input-item">
+                            <h5 class="tittle-item" id="name-labeles">Name </h5>
+                            <input type="text" class="input-items" placeholder="Enter your name">
+                        </div>
+                        <div class="input-item">
+                            <h5 class="tittle-item" id="name">Email</h5>
+                            <input type="text" class="input-items" placeholder="Enter your email">
+                        </div>
+                        <div class="input-item">
+                            <h5 class="tittle-item" id="names">Password</h5>
+                            <input type="text" class="input-items" placeholder="Enter your password">
+                        </div>
+                        <div>
+                            <p class="para-items" id="name-items">Must be at least 8 characters.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button class="sign-item" id="createAccountBtn" type="submit"
+                            onclick="changeColor(this, '#454545', 'white')">Create
+                            account</button>
+                        <p class="para-sect" id="name-itemes">OR</p>
+                        <div class="g-click d-flex flex-row justify-content-center align-items-center">
+                            <img class="g-icon" src="/icons/G Icon.png" alt="">
+                            <button class="btn-items" id="googleSignupBtn" type="button"
+                                onclick="changeColor(this, '#E8EAE9', 'black')">Sign up with
+                                Google</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <script>
+
+        // let btn = document.querySelector(".color-items");
+        // btn.addEventListener("click", () => {ś
+        //    btn.onclick = () => {
+        //     btn.style.backgroundColor = "red";
+
+        //    }
+        // })
+        // function changeColors() {
+        //     let btn = document.querySelector(".color-items");
+        //     btn.style.backgroundColor = "red";
+
+
+        // }
+        // function changeColor() {
+        //     let btn = document.querySelector(".color-items");/*  */
+        //     btn.style.backgroundColor = "blue";
+        //      document.getElementById("name-label").style.color = "black";
+        // }
+
+        function changeColor(btn, color, textColor) {
+
+            let container = btn.closest(".color-items");
+            container.style.backgroundColor = color;
+            // window.location.href = "dashboard.html"; // Redirect to dashboard.html
+
+            btn.style.color = textColor; // Change the text color of the button
+            let textElements = container.querySelectorAll(
+                "h1, h2, h3, h5, p, label, span, a, small, li, button"
+            );
+            textElements.forEach((element) => {
+                element.style.color = textColor;
+            });
+
+        }
+    </script>
+</body>
+
+</html>

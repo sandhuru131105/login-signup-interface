@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Dashboard</title>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            min-height: 500px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #222;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        /* Main content */
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Dashboard cards */
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>My Dashboard</h1>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h3>Menu</h3>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Products</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <h2>Dashboard Overview</h2>
+
+            <!-- Cards -->
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Users</h3>
+                    <p>120</p>
+                </div>
+
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p>85</p>
+                </div>
+
+                <div class="card">
+                    <h3>Products</h3>
+                    <p>45</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSYy44bOXrIXOT6z7luKhJgSn7V75GeW19XsazcxZx1M_G3r4xgWp6MhSU&s=10" alt="">
+</body>
+</html>

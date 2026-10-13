@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Black+Ops+One&family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fontdiner+Swanky&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vast+Shadow&display=swap');
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg-color {
+    background-color: #023F99;
+    height: 100vh;
+    padding: 43px 120px 43px 120px;
+}
+
+.bg-colors {
+    background-color: #fff;
+    height: 87vh;
+    border-radius: 25px;
+}
+
+.carousel-item {
+    background-color: black;
+    height: 50%;
+}
+.logo-item{
+    height: 48px;
+    margin-bottom: 20px;
+}
+.color-items{
+    padding: 35px 180px 35px 180px;
+}
+.header-item{
+    margin-bottom: 12px;
+}
+.heading-item{
+     font-family: "Inter", sans-serif;
+     font-size: 24px;
+     font-weight: 700;
+     margin-bottom: 5px;
+}
+.tittle-item{
+font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+    
+.para-item{
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+     font-weight: 400;
+}
+.login-item{
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+     font-weight: 400;
+     color: blue;
+}
+.input-deat{
+    margin-bottom: 12px;
+}
+.input-item{
+    margin-bottom: 10px;
+}
+.input-items{
+    padding: 7px 100px 7px 10px;
+    outline: none;
+     font-family: "Inter", sans-serif;
+     font-weight: 400;
+     font-size: 12px;
+    border: 2px #E8EAE9 solid;
+    border-radius: 5px;
+}
+.para-items{
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+     font-weight: 400;
+}
+.sign-item{
+    background-color: #0063EF;
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+    padding: 11px 87px 14px 88px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    margin-bottom: 5px;
+}
+.g-icon{
+    height: 30px;
+    margin-right: 2px;
+}
+.btn-items{
+    background-color:transparent;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.g-click{
+    border: 2px #454545 solid;
+    border-radius: 5px;
+    padding: 7px 50px 7px 73px;
+}
+.para-sect{
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.d-block{
+    height: 84vh;
+    
+   
+}
+.carousel-inner{
+     border-radius: 25px;  
+}
+.carousel-items{
+    padding: 10px 10px 10px 26px;
+}
